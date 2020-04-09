@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anim8 Studio</title>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="./main.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="navbar-left" href="">Anim8 Studio</a>
+            <a class="navbar-button" href="#services">Services</a>
+            <a class="navbar-button" href="#steps">About</a>
+            <a class="navbar-button" href="#contact">Contact</a>
+        </div>
+        <div class="content">
+
+            <div class="about">
+                <h1 class="title">Hire Top Animators from <a href="https://www.anim8.io" class="anim8-link" target="_blank">Anim8</a></h1>
+
+                <div class="gallery">
+                    <div class="row">
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/sadewoo-1565416087135.png" class="gallery-image">
+                            <p class="image-description">Sadewoo</p>
+                        </div>
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/zettaiabsolute-1580441753728.png" class="gallery-image">
+                            <p class="image-description">ZettaiAbsolute</p>
+                        </div>
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/cozypop-1565896620380.png" class="gallery-image">
+                            <p class="image-description">Cozypop</p>
+                        </div>
+
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/mayru-1568034359874.png" class="gallery-image">
+                            <p class="image-description">Mayru</p>
+                        </div>
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/gildedguy-1560745675561.png" class="gallery-image">
+                            <p class="image-description">GildedGuy</p>
+                        </div>
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/oxob-1579453888753.png" class="gallery-image">
+                            <p class="image-description">Oxob</p>
+                        </div>
+
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/brofurony-1582251548992.png" class="gallery-image">
+                            <p class="image-description">Brofurony</p>
+                        </div>
+
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/jessthedragoon-1550731238506.png" class="gallery-image">
+                            <p class="image-description">Jessthedragoon</p>
+                        </div>
+
+                        <div class="column img">
+                            <img src="https://static.anim8.io/thumbnails/guzzu0-1581568668281.png" class="gallery-image">
+                            <p class="image-description">Guzzu0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services">
+                <h1 class="title">Services</h1>
+                <div class="services-desc row">
+                    <div class="service column">
+                        <h2>2D & 3D Advertisements</h2>
+                    </div>
+        
+                    <div class="service column">
+                        <h2>2D Sprites & Animations</h2>
+                    </div>
+
+                    <div class="service column">
+                        <h2>Marketing Websites</h2>
+                    </div>
+
+                    <div class="service column">
+                        <h2>3D Modeling & Rigging</h2>
+                    </div>
+
+                    <div class="service column">
+                        <h2>Video Editing</h2>
+                    </div>
+
+                    <div class="service column">
+                        <h2>Post Production</h2>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="steps">
+                <h1 class="title">How we Work</h1>
+                <div class="step">
+                    <p class="step-no">#1</p>
+                    <p class="step-desc">
+                        Pitch us your project OR tell us your company goals.
+                    </p> 
+                </div>
+                <div class="step">
+                    <p class="step-no">#2</p>
+                    <p class="step-desc">
+                        We will develop a plan, tenative animation team and estimated cost based on your request.
+                    </p> 
+                </div>
+                <div class="step">
+                    <p class="step-no">#3</p>
+                    <p class="step-desc">
+                        Agree on the plan, team and payment milestones.
+                    </p> 
+                </div>
+                <div class="step">
+                    <p class="step-no">#4</p>
+                    <p class="step-desc">
+                        We assign an animation director to the project and begin work.
+                    </p> 
+                </div>
+
+                <div class="step">
+                    <p class="step-no">#5</p>
+                    <p class="step-desc">
+                        Each milestone delivers a predetermined animation cut with opportunity for feedback.
+                    </p> 
+                </div>
+
+                <div class="step">
+                    <p class="step-no">#6</p>
+                    <p class="step-desc">
+                        Raw animation assets, and multiple output formats and sizes are delivered to you - our latest happy customer.
+                    </p> 
+                </div>
+            </div>
+
+            <div class="content-item" id="contact">
+                <h2 class="title">Contact Us</h2>
+                <p class="center">Don't be afraid, we are friendly!</p>
+                <div class="contact-form">
+                    <div class="contact-antispam">
+                        Get Contact Information
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let contactForm = document.querySelector('.contact-form');
+            let antispam = document.querySelector('.contact-antispam');
+            let random = Math.random() * (3 - 5) + 3;
+
+            antispam.addEventListener('click', function() {
+                antispam.innerText = 'running antispam checks...';
+                setTimeout(() => {
+                    contactForm.innerHTML = decode('=b!ubshfu>#`cmbol#!isfg>#nbjmup;#?tuvejpAbojn9/jp=0b?');
+                }, random * 1000);
+            });
+
+            const decode = function(str) {
+                let res = '';
+                
+                for (let i = 0; i < str.length; i++) {
+                    let char = str[i].charCodeAt();
+                    res += String.fromCharCode(char - 1);
+                }
+                
+                return res;
+            };
+        </script>
+    </body>
+</html>
